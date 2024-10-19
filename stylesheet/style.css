@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Navbar*/
+.navbar-icons{
+    background-color:#75a356;
+}
+.navbar-icons:hover{
+ color: #5fa232;
+ background-color: #fff;
+}
+.navbar-1 a{
+ color: #010148;
+}
+.navbar-1 li:hover{
+    color:#5fa232
+}
+/* Hero Section*/
+.hero-section {
+    background-image: url('../images/bg-slider1\ \(1\).jpg'); 
+    height: 80vh;
+    margin-top: -76px;
+}
+.hero-section h1 {
+    font-size: 5rem;
+}
+.text-1{
+    color: #ff6924;
+}
+.shop-btn{
+    width: 12%;
+    height: 50px;
+    border-radius: 5px 5px;
+    background-color: #ff6924;
+}
+.shop-btn:hover{
+    background-color: rgb(95, 162, 50);
+}
+.about-btn{
+    width: 12%;
+    height: 50px;
+    background: none;
+    border-radius: 5px 5px;
+    margin-left: 15px;
+    border: 2px solid rgb(95, 162, 50);
+}
+.about-btn:hover{
+    background-color: rgb(95, 162, 50);
+}
+/* Our Special Features*/
+.text-2{
+    color: #010148;
+}
+.card-1 button{
+    height: 40px;
+    width: 35%;
+    border-radius: 5px;
+    border: 2px solid rgb(95, 162, 50);
+}
+.card-1 button:hover{
+    color: #fff;
+    background-color: #ff6924;
+    border: none;
+}
+.card-2 button{
+    height: 40px;
+    width: 35%;
+    border-radius: 5px;
+    border: 2px solid rgb(95, 162, 50);
+}
+.card-2 button:hover{
+    color: #fff;
+    background-color: #ff6924;
+    border: none;
+}
+.card-3 button{
+    height: 40px;
+    width: 35%;
+    border-radius: 5px;
+    border: 2px solid rgb(95, 162, 50);
+}
+.card-3 button:hover{
+    color: #fff;
+    background-color: #ff6924;
+    border: none;
+}
+/* Popular Category*/
+.hero {
+    background-image: url('../images/bg-slider2\(2\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh; 
+    border-radius: 5px;
+}
+.now-btn{
+    height: 40px;
+    width: 25%;
+    border-radius: 10px 10px;
+    background-color:  rgb(95, 162, 50);
+}
+/* Trending Products*/
+  .products-btn{
+    background-color: #5fa232;
+    width: 25%;
+    height: 35px;
+  }
+  .Trending-btn:hover{
+   background-color:#5fa232;
+    width: 28%;
+    height: 35px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  .card img {
+    background-color: #fdeee7; 
+}
+.cart-btn{
+    width: 43%;
+    height: 35px;
+    border: none;
+    background-color:#ff6924;
+    border-radius: 5px;
+}
+/* Deals Of The Weeks*/
+.slider-img {
+background-image: url('../images/bg-slider3\ \(3\)jpg.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100%;
+ width: 100%;
+}
+.timer div {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 30px 10px;
+    background-color: #ff6924;
+    border-radius: 5px;
+}
+
+/* What our Clients are Saying*/
+.Clients-Saying{
+    background-image: url('../images/client-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.arrow-btn{
+    border: 2px solid #ff6600;
+    color: #010148;
+}
+.arrow-btn:hover{
+    color: #fff;
+    background-color: #ff6600;
+}
+/* Latest News & Blog */
+.read-btn{
+    width: 30%;
+    border: 2px solid #5fa232;
+    border-radius: 5px;
+}
+/* Footer Section */
+.footer-section{
+    background-image: url('../images/footer-img-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+}
+.footer span{
+  color: #79BF35;
+}
+/* sign in sign up*/
+.hand-free{
+    width: 8%;
+}
+.signin-img {
+    background-image: url('../images/bg-slider4\ \(4\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh; 
+    background: linear-gradient(rgba(10, 20, 38, 0.493), rgba(0, 5, 12, 0.575)), url(../images/bg-slider4\ \(4\).jpg);
+}
+.login-btn{
+    background-color: #5fa232;
+    border: none;
+    height: 50px;
+}
+.account-btn{
+    background-color: #5fa232;
+    border: none;
+    height: 50px;
+}
+/* footer */
+.newsletter {
+    background-image: url('../images/Newsletter-img\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.footer-Newsletter {
+    background-image: url('../images/Newsletter-img-3.png');
+    background-size: cover;
+    background-position: center;
+}
+.footer-bg {
+    background-image: url('../images/Newsletter-img-10.png');
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .newsletter-img-left {
+        display: none; 
+    }
+    .form-control {
+        width: 100% !important; 
+    }
+    .footer-Newsletter .col-md-3 {
+        margin-bottom: 20px; 
+    }
+}
+
+.full-height {
+    min-height: 70vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
