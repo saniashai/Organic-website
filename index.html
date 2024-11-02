@@ -16,7 +16,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg " style="background-color: #5fa232;">
+    <nav class=" d-none d-lg-block navbar navbar-expand-lg " style="background-color: #5fa232;">
         <div class="container">
             <a class="navbar-brand fw-bold text-white" href="#" style="font-size: 12px;">Welcome to our Organic store
                 Organico!
@@ -131,11 +131,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-flex align-items-center">
-                    <iconify-icon class="fs-5 me-3" icon="bi:heart"></iconify-icon>
-                    <iconify-icon class="fs-5 me-3" icon="bi:cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"></iconify-icon>
-                    <iconify-icon class="fs-5 me-3" icon="bi:search"></iconify-icon>
+                <div class="icons-wrapper">
+                    <!-- Cart Icon with Counter -->
+                    <div class="cart-icon">
+                          <iconify-icon class="fs-5 me-3" icon="bi:heart"></iconify-icon>
+                        <iconify-icon class="me-3" icon="bi:cart" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                            aria-controls="offcanvasScrolling"></iconify-icon>
+                        <span id="cart-count" class="cart-count">0</span>
+                        <iconify-icon icon="bi:search"></iconify-icon>
+                    </div>
                 </div>
+                
             </div>
         </nav>
     </div>
@@ -579,7 +585,7 @@
         </footer>
 
         <!-- ofcnva -->
-    <div class="offcanvas offcanvas-end " clas  data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Cart</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>

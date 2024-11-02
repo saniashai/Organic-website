@@ -1,4 +1,7 @@
+
 let cartItems = [];
+let cartCount = 0; 
+
 document.querySelectorAll('.add-to-cart').forEach(button => {
     button.addEventListener('click', function () {
         const productItem = button.closest('.product-item');
@@ -18,13 +21,19 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
 
 function addToCart(item) {
     cartItems.push(item);
+    updateCartCount();
     displayCartItems();
 }
+
+
+function updateCartCount() {
+    cartCount = cartItems.length; 
+    document.getElementById('cart-count').textContent = cartCount;
+}
+
 function displayCartItems() {
     const cartItemsContainer = document.getElementById('cart-items');
     cartItemsContainer.innerHTML = '';
-
-
 
     cartItems.forEach(item => {
         const cartItemDiv = document.createElement('div');
@@ -36,11 +45,11 @@ function displayCartItems() {
         `;
         cartItemsContainer.appendChild(cartItemDiv);
 
-
         const removeBtn = cartItemDiv.querySelector('.remove-btn');
         removeBtn.addEventListener('click', function () {
             cartItems = cartItems.filter(cartItem => cartItem.name !== item.name);
             displayCartItems();
+            updateCartCount(); 
         });
 
         removeBtn.style.backgroundColor = '#ff4d4d';

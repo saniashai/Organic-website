@@ -220,11 +220,35 @@ height: 100%;
         margin-bottom: 20px; 
     }
 }
+.main-navbar{
+    background-color: #5fa232;
+}
 
 .full-height {
     min-height: 70vh;
 }
 
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+.cart-count {
+    position: absolute;
+    top: -10px;
+    left: 45px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 20px;
+    height: 20px;
+}
+
+ 
 
 
 
@@ -237,3 +261,8 @@ height: 100%;
 
 
 
+
+
+
+  
+  
